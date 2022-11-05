@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-05T15:15:05 IST" name="Default suite" finished-at="2022-11-05T15:15:20 IST" duration-ms="15242">
+    <groups>
+    </groups>
+    <test started-at="2022-11-05T15:15:05 IST" name="Default test" finished-at="2022-11-05T15:15:20 IST" duration-ms="15242">
+      <class name="test.VerifyAddToCartForSingleProduct">
+        <test-method is-config="true" signature="configureReports()[pri:0, instance:test.VerifyAddToCartForSingleProduct@4c1909a3]" started-at="2022-11-05T15:15:05 IST" name="configureReports" finished-at="2022-11-05T15:15:06 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureReports -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:test.VerifyAddToCartForSingleProduct@4c1909a3]" started-at="2022-11-05T15:15:06 IST" name="launchBrowser" finished-at="2022-11-05T15:15:16 IST" duration-ms="9714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyProductIsAddedToCart()[pri:0, instance:test.VerifyAddToCartForSingleProduct@4c1909a3]" started-at="2022-11-05T15:15:16 IST" name="verifyProductIsAddedToCart" finished-at="2022-11-05T15:15:19 IST" duration-ms="2746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductIsAddedToCart -->
+        <test-method is-config="true" signature="getTestResults(org.testng.ITestResult)[pri:0, instance:test.VerifyAddToCartForSingleProduct@4c1909a3]" started-at="2022-11-05T15:15:19 IST" name="getTestResults" finished-at="2022-11-05T15:15:19 IST" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductIsAddedToCart status=SUCCESS method=VerifyAddToCartForSingleProduct.verifyProductIsAddedToCart()[pri:0, instance:test.VerifyAddToCartForSingleProduct@4c1909a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResults -->
+        <test-method is-config="true" signature="publishResult()[pri:0, instance:test.VerifyAddToCartForSingleProduct@4c1909a3]" started-at="2022-11-05T15:15:19 IST" name="publishResult" finished-at="2022-11-05T15:15:20 IST" duration-ms="1458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishResult -->
+      </class> <!-- test.VerifyAddToCartForSingleProduct -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
