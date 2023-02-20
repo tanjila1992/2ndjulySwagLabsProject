@@ -6,11 +6,13 @@ import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -32,7 +34,7 @@ public class SwagLabsLoginTest extends BaseClass {
 	public void configureReports() {
 		reports = Reports.createReports();
 	}
-
+   
 	@BeforeMethod
 	public void launchBrowser() {
 		driver = Browser.openBrowser();
@@ -55,6 +57,7 @@ public class SwagLabsLoginTest extends BaseClass {
 		swagLabsLoginPage.enterPassword(pass);
 		swagLabsLoginPage.clickOnLogin();
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html");
+
 	}
 
 	@AfterMethod
@@ -71,6 +74,9 @@ public class SwagLabsLoginTest extends BaseClass {
 	@AfterTest
 	public void publishResult() {
 		reports.flush();
+		driver.quit();
+
 	}
+	
 
 }

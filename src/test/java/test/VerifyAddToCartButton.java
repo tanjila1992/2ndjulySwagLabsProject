@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -28,7 +29,7 @@ public class VerifyAddToCartButton extends BaseClass{
 	public void configureReports() {
 		reports = Reports.createReports();
 	}
-
+  
 	@BeforeMethod
 	public void launchBrowser() {
 		driver = Browser.openBrowser();

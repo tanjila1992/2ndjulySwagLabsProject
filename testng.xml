@@ -3,9 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.VerifyAddToCartButton"/>
-      <class name="test.SwagLabsLoginTest"/>
-      <class name="test.VerifyAddToCartForSingleProduct"/>
+      <class name="test.Login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
